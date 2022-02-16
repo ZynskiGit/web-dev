@@ -1,0 +1,303 @@
+
+.wd-font {
+    font-size: 15px;
+}
+
+.wd-size-13 {
+    font-size: 13px;
+}
+
+.wd-topic-text {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-topic-text-2 {
+    font-size: 13px;
+    color: lightgray;
+}
+
+.wd-fg-color-black {
+    color: black;
+}
+
+.wd-fg-color-white {
+    color: white;
+}
+
+.wd-fg-color-blue {
+    color: #7070ff;
+}
+
+.wd-fg-color-red {
+    color: #ff7070;
+}
+
+.wd-fg-color-green {
+    color: green;
+}
+
+.wd-fg-color-highlight {
+    color: rgb(29, 161, 242);
+}
+
+.wd-fg-color-normal {
+    color: rgb(110, 118, 125);
+}
+
+
+.wd-bg-color-yellow {
+    background-color: #ffff07;
+}
+
+.wd-bg-color-blue {
+    background-color: #7070ff;
+}
+
+.wd-bg-color-red {
+    background-color: #ff7070;
+}
+
+.wd-bg-color-green {
+    background-color: green;
+}
+
+.wd-bg-color-black {
+    background-color: black;
+}
+
+.wd-bg-color-dark-gray {
+    background-color: darkgray;
+}
+
+.wd-border-fat {
+    border-width: 20px 30px 20px 30px;
+}
+
+.wd-border-thin {
+    border-width: 2px;
+}
+
+.wd-border-solid {
+    border-style: solid;
+}
+
+.wd-border-dashed {
+    border-style: dashed;
+}
+
+.wd-border-color {
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-border-highlight {
+    border-color: rgb(29, 161, 242);
+}
+
+.wd-border-right {
+    float: right;
+}
+
+.button-name:active {
+    color: rgb(29, 161, 242);
+    border-bottom: 2px solid rgb(29, 161, 242);
+    text-decoration-color: rgb(29, 161, 242);
+}
+
+.button-name:hover {
+    color: rgb(29, 161, 242);
+    border-bottom: 2px solid rgb(29, 161, 242);
+    text-decoration-color: rgb(29, 161, 242);
+}
+
+.wd-padded-top-left {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.wd-padded-left {
+    padding-left: 16px;
+}
+
+.wd-padded-bottom-right {
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+.wd-padded-bottom-12 {
+    padding-bottom: 12px;
+}
+
+.wd-padding-fat {
+    padding: 50px;
+}
+
+.wd-padding-16 {
+    padding: 16px;
+}
+
+.wd-padding-2 {
+    padding: 2px;
+}
+
+.wd-margin-bottom {
+    margin-bottom: 50px;
+}
+
+.wd-margin-right-16 {
+    margin-right: 16px;
+}
+
+.wd-margin-right-left {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.wd-margin-all-around {
+    margin: 12px;
+}
+
+.wd-rounded-corners-top {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.wd-rounded-corners-bottom {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+}
+
+.wd-rounded-corners-all-around-25 {
+    border-radius: 25px;
+}
+
+.wd-rounded-corners-inline {
+    border-radius: 30px 0px 20px 50px;
+}
+
+.dimension-portrait {
+    width: 75px;
+    height: 100px;
+}
+
+.dimension-landscape {
+    width: 100px;
+    height: 75px;
+}
+
+.dimension-square {
+    width: 75px;
+    height: 75px;
+}
+
+.wd-pos-relative-move-up {
+    position: relative;
+    bottom: 100px;
+}
+
+.pos-relative-nudge-up-right {
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+}
+
+.wd-pos-relative-nudge-up-right-15 {
+    position: relative;
+    bottom: 12px;
+    left: 15px;
+}
+
+.pos-relative-nudge-down-right {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.pos-relative-nudge-right {
+    position: relative;
+    bottom: 50px;
+    left: 212px;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute-10-10 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.pos-absolute-50-50 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.pos-absolute-120-20 {
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
+
+.pos-fixed {
+    position: fixed;
+    right: 0px;
+    bottom: 50%;
+}
+
+.zindex-bring-to-front {
+    z-index: 10;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+    height: 100px;
+}
+
+.float-done {
+    clear: both;
+}
+
+.grid-row {
+    clear: both;
+}
+
+.grid-col-half-page {
+    width: 50%;
+    float: left;
+}
+
+.grid-col-third-page {
+    width: 33%;
+    float: left;
+}
+
+.grid-col-two-thirds-page {
+    width: 67%;
+    float: left;
+}
+
+.grid-col-left-sidebar {
+    width: 20%;
+    float: left;
+}
+
+.grid-col-main-content {
+    width: 60%;
+    float: left;
+}
+
+.grid-col-right-sidebar {
+    width: 20%;
+    float: left;
+}
