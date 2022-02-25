@@ -6,133 +6,285 @@
 
 
     <link href="explore.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
 
 </head>
-<body class="wd-bg-color-black wd-border-color wd-border-solid wd-border-thin">
+<body class="wd-padding-16">
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <!-- Lists of hyperlinks -->
 
-<div>
-    <label>
-        <input
-                class="wd-bg-color-dark-gray wd-fg-color-white wd-border-color wd-rounded-corners-all-around wd-margin-all-around"
-                type="search"
-                placeholder="Search Tuiter"
-                id="wd-search"/><br/>
-    </label>
+            <div class="list-group wd-padded-bottom-12 d-none d-xxl-block">
 
-    <a link href="explore-settings.html" class="pos-relative-nudge-right ">
-        <span>&#9881;</span>
+                <a href="tuit.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fab fa-twitter" style="color: black"></i></br></a>
+                <a href="home.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fa fa-home" style="color: black"></i>Home</br></a>
+                <a href="explore.html"
+                   class="list-group-item list-group-item-action active" aria-disabled="true"><i
+                        class="fa fa-hashtag" style="color: black"></i>Explore</br></a>
+                <a href="notifications.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fa fa-bell" style="color: black"></i>Notifications</br></a>
+                <a href="messages.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fa fa-envelope" style="color: black"></i>Messages</br></a>
+                <a href="bookmarks.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fa fa-bookmark" style="color: black"></i>Bookmarks</br></a>
+                <a href="navigation.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fa fa-list" style="color: black"></i>Lists</br></a>
+                <a href="profile.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fa fa-person-booth" style="color: black"></i>Profile</br></a>
+                <a href="home.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fa fa-minus-circle" style="color: black"></i>More</br></a>
 
-        <br/>
-    </a>
-</div>
+            </div>
+
+            <!-- Smaller Version -->
+            <div
+                    class="list-group wd-padded-bottom-12 d-none-block d-xl-block d-lg-block d-md-block d-sm-block d-xxl-none">
+
+                <a href="tuit.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fab fa-twitter" style="color: black"></i></br></a>
+                <a href="home.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fa fa-home" style="color: black"></i></br></a>
+                <a href="explore.html"
+                   class="list-group-item list-group-item-action active" aria-disabled="true"><i
+                        class="fa fa-hashtag" style="color: black"></i></br></a>
+                <a href="notifications.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fa fa-bell" style="color: black"></i></br></a>
+                <a href="messages.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fa fa-envelope" style="color: black"></i></br></a>
+                <a href="bookmarks.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fa fa-bookmark" style="color: black"></i></br></a>
+                <a href="navigation.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fa fa-list" style="color: black"></i></br></a>
+                <a href="profile.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fa fa-person-booth" style="color: black"></i></br></a>
+                <a href="home.html"
+                   class="list-group-item list-group-item-action" aria-disabled="true"><i
+                        class="fa fa-minus-circle" style="color: black"></i></br></a>
+
+            </div>
+            <button type="submit" class="btn btn-primary rounded-pill" style="width:100%">Tuit</button>
+            </button>
 
 
-<div>
-    <ol>
-        <il><a class="wd-fg-color-normal  button-name wd-padding-16 wd-font-15" link
-               href="navigation.html">For you</a>
-        </il>
-        <il><a class="wd-fg-color-normal button-name wd-padding-16 wd-font-15" link
-               href="navigation.html">
-            Trending</a></il>
-        <il><a class="wd-fg-color-normal button-name wd-padding-16 wd-font-15" link
-               href="navigation.html">
-            COVID-19</a></il>
-        <il><a class="wd-fg-color-normal button-name wd-padding-16 wd-font-15" link
-               href="navigation.html">
-            News</a></il>
-        <il><a class="wd-fg-color-normal  button-name wd-padding-16 wd-font-15" link
-               href="navigation.html">
-            Sports</a></il>
-        <il><a class="wd-fg-color-normal  button-name wd-padding-16 wd-font-15" link
-               href="navigation.html">Entertainment
-        </a></il>
-    </ol>
-</div>
-<div>
-    <ol>
-        <li class="wd-border-solid wd-border-thin wd-border-color wd-padding-16">
-            <label for="title" class="wd-font wd-fg-color-white float-left wd-size-13">NASA</label>
-            <h1 id="title" class="wd-topic-text wd-pos-relative-nudge-up-right-15">Trending in Science</h1>
-            <h1 class="wd-font wd-fg-color-white">Starship</h1>
-            <h1 class="wd-topic-text ">13,477 Tuits</h1>
-            <img
-                    class="wd-rounded-corners-all-around-25 wd-border-right wd-margin-right-16 wd-padding-2 wd-pos-relative-move-up pos-relative "
+        </div>
+        <div class="col-6">
+            <a link href="explore-settings.html" class="float-right">
+                <i class="fa fa-cog  wd-pos-relative-move-left-12"></i></a>
 
-                    src="starship.jpg"
-                    width="100"
-                    height="100">
-        </li>
 
-        <li class="wd-border-solid wd-border-thin wd-border-color wd-padding-16">
-            <label for="title1" class="wd-font wd-fg-color-white float-left wd-size-13">Sports Illustrated</label>
+            <input
+                    class="fa wd-fg-color-white wd-border-color wd-rounded-corners-all-around "
+                    type="search"
+                    placeholder="&#xF002; Search Tuiter"
+                    id="wd-search"
+                    style="width:90%"
+            /><br/>
 
-            <h1 id="title1" class="wd-topic-text wd-pos-relative-nudge-up-right-15">Tranding in Sports</h1>
-            <h1 class="wd-font wd-fg-color-white">Joe Sheisty does it Again</h1>
-            <h1 class="wd-topic-text ">30,278 Tuits</h1>
-            <img
-                    class="wd-rounded-corners-all-around-25 wd-border-right wd-margin-right-16 wd-padding-2 wd-pos-relative-move-up pos-relative "
 
-                    src="Joe.png"
-                    width="100"
-                    height="100">
+            <div class="wd-border-color  wd-border-thin">
+                <p></p>
 
-        </li>
-        <li class="wd-border-solid wd-border-thin wd-border-color wd-padding-16">
-            <label for="title2" class="wd-font wd-topic-text-2 float-left">New Apps</label>
-            <h1 id="title2" class="wd-topic-text wd-pos-relative-nudge-up-right-15">Trending in United States</h1>
-            <h1 class="wd-font wd-fg-color-white">Tuit is the new Twitter</h1>
-            <h1 class="wd-topic-text ">50,446 Tuits</h1>
-            <img
-                    class="wd-rounded-corners-all-around-25 wd-border-right wd-margin-right-16 wd-padding-2 wd-pos-relative-move-up pos-relative"
 
-                    src="twitter.jpg"
-                    width="100"
-                    height="100">
-        </li>
+                <div>
 
-        <li class="wd-border-solid wd-border-thin wd-border-color wd-padding-16">
-            <label for="title" class="wd-font wd-fg-color-white float-left wd-size-13">Time</label>
-            <h1 id="title4" class="wd-topic-text wd-pos-relative-nudge-up-right-15">Trending in Science</h1>
-            <h1 class="wd-font wd-fg-color-white">Elon Tusk Flies</h1>
-            <h1 class="wd-topic-text ">22,355 Tuits</h1>
-            <img
-                    class="wd-rounded-corners-all-around-25 wd-border-right wd-margin-right-16 wd-padding-2 wd-pos-relative-move-up pos-relative "
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="for-you.html">For You</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trending.html">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sports.html">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="entertainment.html">Entertainment</a>
+                        </li>
+                    </ul>
+                </div>
+                <p></p>
+                <div class="card" style="width: 100% height:100%;">
+                    <img src="starship.jpg" class="card-img-top" alt="...">
+                    <ul class="list-group card-group">
+                        <li class="wd-border-solid wd-border-thin wd-border-color  list-group-item">
+                            <h1 class="wd-topic-text">Web Development
+                                <img
+                                        class="wd-rounded-corners-all-around-25 wd-border-right wd-margin-right-16 "
 
-                    src="ship.jpg"
-                    width="100"
-                    height="100">
-        </li>
+                                        src="atom.png"
+                                        width="100"
+                                        height="100"></h1>
+                            <h1 class="wd-font wd-fg-color-black wd-font">ReactJS <i
+                                    class="fa fa-check-circle"></i> - 2h</h1>
+                            <h1 class="wd-font wd-fg-color-black align-text-bottom">React.js is a component based front
+                                end library
+                                that makes it very easy to build Single Page Applications or SPAs</h1>
+                            <!-- <h1 class="wd-topic-text ">13,477 Tuits</h1> -->
 
-        <li class="wd-border-solid wd-border-thin wd-border-color wd-padding-16">
-            <label for="title1" class="wd-font wd-fg-color-white float-left wd-size-13">Sports Center</label>
+                        </li>
 
-            <h1 id="title5" class="wd-topic-text wd-pos-relative-nudge-up-right-15">Tranding in Sports</h1>
-            <h1 class="wd-font wd-fg-color-white">Odell has done it</h1>
-            <h1 class="wd-topic-text ">45,233 Tuits</h1>
-            <img
-                    class="wd-rounded-corners-all-around-25 wd-border-right wd-margin-right-16 wd-padding-2 wd-pos-relative-move-up pos-relative "
+                        <li class="wd-border-solid wd-border-thin wd-border-color  list-group-item">
+                            <span class="align-text-top wd-font wd-fg-color-black">Javascript <i
+                                    class="fa fa-check-circle"></i> - 2h
+                            <img
+                                    class="wd-rounded-corners-all-around-25 wd-border-right wd-margin-right-16 "
 
-                    src="odell.jpg"
-                    width="100"
-                    height="100">
+                                    src="javascript.png"
+                                    width="100"
+                                    height="100"></span>
+                            <h1 class="wd-font wd-fg-color-black">JavaScript is programming language that can run
+                                on browsers as well as desktops</h1>
+                            <h1 class="wd-topic-text ">123k Tuits</h1>
 
-        </li>
-        <li class="wd-border-solid wd-border-thin wd-border-color wd-padding-16">
-            <label for="title2" class="wd-font wd-topic-text-2 float-left">New Technology</label>
-            <h1 id="title6" class="wd-topic-text wd-pos-relative-nudge-up-right-15">Trending in United Kingdom</h1>
-            <h1 class="wd-font wd-fg-color-white">The Pearpod is Coming</h1>
-            <h1 class="wd-topic-text ">10,433 Tuits</h1>
-            <img
-                    class="wd-rounded-corners-all-around-25 wd-border-right wd-margin-right-16 wd-padding-2 wd-pos-relative-move-up pos-relative"
+                        </li>
+                        <li class="wd-border-solid wd-border-thin wd-border-color  list-group-item">
+                            <h1 id="title2" class="wd-topic-text ">Web Development
+                                <img
+                                        class="wd-rounded-corners-all-around-25 wd-border-right wd-margin-right-16 "
 
-                    src="pear-phone.jpg"
-                    width="100"
-                    height="100">
-        </li>
+                                        src="jquery.png"
+                                        width="100"
+                                        height="100"></h1>
+                            <h1 class="wd-font wd-fg-color-black ">JQuery</h1>
+                            <h1 class="wd-topic-text ">123k Tuits</h1>
 
-    </ol>
+                        </li>
+
+                        <li class="wd-border-solid wd-border-thin wd-border-color  list-group-item">
+                            <h1 id="title4" class="wd-topic-text ">Web Development
+                                <img
+                                        class="wd-rounded-corners-all-around-25 wd-border-right wd-margin-right-16 "
+
+                                        src="nodejs.jpg"
+                                        width="100"
+                                        height="100"></h1>
+                            <h1 class="wd-font wd-fg-color-black ">NodeJS
+                                <i
+                                        class="fa fa-check-circle"></i> - 2h</h1>
+                            <h1 class="wd-topic-text ">123k Tuits</h1>
+
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div
+                    class="list-group wd-padded-bottom-12 d-none d-xl-block d-lg-block d-md-none d-sm-none d-xxl-block">
+
+                <span class="list-group-item list-group-item-active" aria-disabled="true">Who To Follow</span>
+                <span class="list-group-item list-group-item-active" aria-disabled="true">
+
+                    <img
+                            class="wd-rounded-corners-all-around-25 "
+
+                            src="java.png"
+                            width="50"
+                            height="50">
+                    <span class="align-text-top">
+                    Java
+                        <i class="fa fa-check-circle"></i>
+                        </span>
+                    <span class="align-text-bottom">
+                    @Java
+                        </span>
+
+                    <button type="submit" class="btn btn-primary wd-border-right rounded-pill">Follow
+                    </button>
+                    </br>
+
+                </span>
+
+                <span class="list-group-item list-group-item-active" aria-disabled="true">
+                    <img
+                            class="wd-rounded-corners-all-around-25 "
+
+                            src="relativity.jpg"
+                            width="50"
+                            height="50">
+                    Relativity Space
+                    <i class="fa fa-check-circle"></i>
+                    <button type="submit" class="btn btn-primary wd-border-right rounded-pill">Follow
+                    </button>
+                    </br>
+
+                </span>
+                <span class="list-group-item list-group-item-active" aria-disabled="true">
+                    <img
+                            class="wd-rounded-corners-all-around-25 "
+
+                            src="virgin.png"
+                            width="50"
+                            height="50">
+                    <span class="align-top">
+                    Virgin Galactic
+                        </span>
+
+
+
+                    <i class="fa fa-check-circle"></i>
+                    <button type="submit" class="btn btn-primary wd-border-right rounded-pill">Follow
+                    </button>
+                    </br>
+
+                </span>
+                <span class="list-group-item list-group-item-active" aria-disabled="true">
+                    <img
+                            class="wd-rounded-corners-all-around-25 "
+
+                            src="nasa.png"
+                            width="50"
+                            height="50">
+                    Nasa
+                    <i class="fa fa-check-circle"></i>
+                    <button type="submit" class="btn btn-primary wd-border-right rounded-pill">Follow
+                    </button>
+                    </br>
+
+                </span>
+                <span class="list-group-item list-group-item-active" aria-disabled="true">
+                    <img
+                            class="wd-rounded-corners-all-around-25 "
+
+                            src="TESLA-LOGO.jpg"
+                            width="50"
+                            height="50">
+                    Tesla
+                    <i class="fa fa-check-circle"></i>
+                    <button type="submit" class="btn btn-primary wd-border-right rounded-pill">Follow
+                    </button>
+                    </br>
+
+                </span>
+
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

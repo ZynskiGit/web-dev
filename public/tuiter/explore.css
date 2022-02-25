@@ -8,7 +8,7 @@
 }
 
 .wd-topic-text {
-    font-size: 13px;
+    font-size: 15px;
     color: rgb(110, 118, 125);
 }
 
@@ -98,6 +98,11 @@
     float: right;
 }
 
+.wd-border-left {
+    float: left;
+}
+
+
 .button-name:active {
     color: rgb(29, 161, 242);
     border-bottom: 2px solid rgb(29, 161, 242);
@@ -142,6 +147,10 @@
 
 .wd-margin-bottom {
     margin-bottom: 50px;
+}
+
+.wd-margin-top-16 {
+    margin-top: 16px;
 }
 
 .wd-margin-right-16 {
@@ -199,6 +208,11 @@
     bottom: 100px;
 }
 
+.wd-pos-relative-move-left-12 {
+    position: relative;
+    right: 12px;
+}
+
 .pos-relative-nudge-up-right {
     position: relative;
     bottom: 30px;
@@ -221,6 +235,11 @@
     position: relative;
     bottom: 50px;
     left: 212px;
+}
+
+.pos-relative-move-right-12 {
+    position: relative;
+    left: 12px;
 }
 
 .pos-relative {
