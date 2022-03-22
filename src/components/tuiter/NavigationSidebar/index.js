@@ -2,34 +2,42 @@ import React from "react";
 
 const NavigationSidebar = (
     {
-        active = 'explore'
+        active = 'home'
     }) => {
     return (
         <>
-            <div class="list-group">
-                <a class="list-group-item" id="1" href="/">
-                    <i class="fab fa-twitter"></i></a>
-                <a class="list-group-item" href="/">
-                    <i class="fa fa-home"></i> Home</a>
-                <a class="list-group-item" href="/">
-                    <i class="fa fa-hashtag"></i> Explore</a>
-                <a class="list-group-item" href="/">
-                    <i class="fa fa-bell"></i> Notifications</a>
-                <a class="list-group-item" href="/">
-                    <i class="fa fa-envelope"></i> Messages</a>
-                <a class="list-group-item" href="/">
-                    <i class="fa fa-bookmark"></i> Bookmarks</a>
-                <a class="list-group-item" href="/">
-                    <i class="fa fa-list"></i> Lists</a>
-                <a class="list-group-item" href="/">
-                    <i class="fa fa-user"></i> Profile</a>
-                <a class="list-group-item" href="/">
-                    <i class="fa fa-dot-circle"></i> More</a>
+            <div className="list-group">
+                <a className="list-group-item" id="1" href="/">
+                    <i className="fab fa-twitter"></i></a>
+                <a className={`list-group-item
+        ${active === 'home' ? 'active' : ''}`} href="/">
+                    <i className="fa fa-home"></i> Home</a>
+                <a className={`list-group-item
+        ${active === 'explore' ? 'active' : ''}`} href="/">
+                    <i className="fa fa-hashtag"></i> Explore</a>
+                <a className={`list-group-item
+        ${active === 'notifications' ? 'active' : ''}`} href="/">
+                    <i className="fa fa-bell"></i> Notifications</a>
+                <a className={`list-group-item
+        ${active === 'messages' ? 'active' : ''}`} href="/">
+                    <i className="fa fa-envelope"></i> Messages</a>
+                <a className={`list-group-item
+        ${active === 'bookmarks' ? 'active' : ''}`} href="/">
+                    <i className="fa fa-bookmark"></i> Bookmarks</a>
+                <a className={`list-group-item
+        ${active === 'lists' ? 'active' : ''}`} href="/">
+                    <i className="fa fa-list"></i> Lists</a>
+                <a className={`list-group-item
+        ${active === 'profile' ? 'active' : ''}`} href="/">
+                    <i className="fa fa-user"></i> Profile</a>
+                <a className={`list-group-item
+        ${active === 'more' ? 'active' : ''}`} href="/">
+                    <i className="fa fa-dot-circle"></i> More</a>
 
             </div>
-            <div class="d-grid mt-2">
+            <div className="d-grid mt-2">
                 <a href="tweet.html"
-                   class="btn btn-primary btn-block rounded-pill">
+                   className="btn btn-primary btn-block rounded-pill">
                     Tweet</a>
             </div>
         </>
