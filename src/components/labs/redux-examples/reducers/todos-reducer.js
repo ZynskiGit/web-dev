@@ -32,7 +32,7 @@ const todosReducer = (state = data, action) => {
 
             return [
                 ...state,
-                action.todo
+                newTodo
             ]
         default:
             return state;
