@@ -1,20 +1,20 @@
 const WhoToFollowListItem = (who) => {
     return (`
-<li class="list-group-item">
+<li className="list-group-item">
 
-<span class="flex">
+<span className="flex">
 
 <img
-                            class="wd-rounded-corners-all-around-25 "
+                            className="wd-rounded-corners-all-around-25 "
 
-                            src=${who.avatarIcon})
+                            src={who.avatarIcon}
                             width="50"
                             height="50">
                     
                     <span width="100%">
-                    ${who.userName}
+                    {who.userName}
                     <i class="fa fa-check-circle"></i></br>
-                    @${who.handle}
+                    @{who.handle}
                     <button type="submit" class="btn btn-primary wd-border-right rounded-pill">Follow
                     </button>
      
