@@ -5,9 +5,12 @@ import HelloWorld from "./components/hello-world"; // no .js extension needed
 import Labs from "./components/labs";
 import Tuiter from "./components/tuiter";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import ExploreScreen from "./components/tuiter/explore screen/ExploreScreen"; // import Route
+import ExploreScreen from "./components/tuiter/explore screen/ExploreScreen";
+import HomeScreen from "./components/tuiter/home-screen"; // import Route
 
-
+// excess Route:
+// <Route path="notifications"
+//                                   element={<NotificationScreen/>}/>
 
 function App() {
     return (
@@ -25,9 +28,6 @@ function App() {
                                    element={<HomeScreen/>}/>
                             <Route path="explore"
                                    element={<ExploreScreen/>}/>
-                            <Route path="notifications"
-                                   element={<NotificationScreen/>}/>
-                            ...
                         </Route>
                     </Route>
                 </Routes>
