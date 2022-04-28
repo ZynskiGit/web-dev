@@ -13,7 +13,7 @@ const PostSummaryItem = (
             {post.topic}
             {post.userName}
             {post.time}
-            <img src={post.image}/>
+            <img src={post.image} alt={""}/>
             {post.title}
         </li>
     );

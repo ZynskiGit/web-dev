@@ -8,7 +8,7 @@ const WhoToFollowListItem = (
     }) => {
     return(                                 // we don't need ''
         <li>
-            <img src={who.avatarIcon}/>
+            <img src={who.avatarIcon} alt={""}/>
             {who.userName}
             ({who.handle})
         </li>
