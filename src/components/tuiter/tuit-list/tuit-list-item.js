@@ -23,6 +23,7 @@ const TuitListItem = ({tuit}) => {
             <h1 className="wd-font wd-fg-color-black">{tuit.tuit}</h1>
             <h1 className="wd-topic-text ">{tuit.stats.retuits}</h1>
 
+
         </li>
     );
 }
