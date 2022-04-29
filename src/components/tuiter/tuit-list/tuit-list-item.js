@@ -10,7 +10,7 @@ const TuitListItem = ({tuit}) => {
                             <span className="align-text-top wd-font wd-fg-color-black">{tuit.topic}
                             <img
                                 className="wd-rounded-corners-all-around-25 wd-border-right wd-margin-right-16 "
-
+                                alt={"A javascript Logo"}
                                 src="javascript.png"
                                 width="100"
                                 height="100"></img></span>
