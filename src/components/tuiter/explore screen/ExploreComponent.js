@@ -9,7 +9,7 @@ const ExploreComponent = () => {
                     type="search"
                     placeholder="&#xF002; Search Tuiter"
                     id="wd-search"
-                    style="width:90%"
+                    style={{width: '90%'}}
                 />
             </div>
             <ul className="nav mb-2 nav-tabs">
