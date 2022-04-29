@@ -2,7 +2,7 @@ import WhoToFollowListItem from "./WhoToFollowListItem.js";
 import {useSelector} from "react-redux";
 
 const WhoToFollowList = () => {
-    const who = useSelector(state => state.who);
+    const who = useSelector((state) => state.who);
     return(
         <ul>
             {                                           // don't need $

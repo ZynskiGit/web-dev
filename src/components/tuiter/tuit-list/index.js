@@ -18,7 +18,7 @@ const TuitList = () => {
 
     useEffect(() =>
             findAllTuits(dispatch),
-        []);
+        [dispatch]);
 
     const [newTuit, setNewTuit] =
         useState({tuit: 'New tuit'});
