@@ -35,7 +35,7 @@ const ExploreComponent = () => {
                 </div>
             </ul>
             <div className="card" style={{width: '400px'}}>
-                <img className="card-img-top" alt={"An avatar image"} src="img_avatar1.png" style={{width: '100%'}}></img>
+                <img className="card-img-top" src="img_avatar1.png" style={{width: '100%'}}></img>
                 <div className="card-body">
                     <h4 className="card-title">John Doe</h4>
                     <p className="card-text">Some example text some example text. John Doe is an architect and

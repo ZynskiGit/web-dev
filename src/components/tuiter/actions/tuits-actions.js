@@ -25,7 +25,7 @@ export const updateTuit = async (dispatch, tuit) => {
     const status = await service.updateTuit(tuit);
     dispatch({
         type: UPDATE_TUIT,
-        tuit
+        status
     });
 }
 
@@ -34,7 +34,7 @@ export const deleteTuit = async (dispatch, tuit) => {
     const response = await service.deleteTuit(tuit);
     dispatch({
         type: DELETE_TUIT,
-        tuit
+        response
     })
 }
 
