@@ -30,7 +30,7 @@ const TuitList = () => {
             {
                 tuits.map && tuits.map(tuit =>
 
-                    <li className="list-group-item">
+                    <li className="list-group-item" key={tuit._id}>
                         <TuitListItem key={tuit._id}
                                       tuit={tuit.tuit}
                         />

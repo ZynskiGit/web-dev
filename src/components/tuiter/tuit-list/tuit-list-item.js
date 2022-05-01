@@ -7,7 +7,8 @@ const TuitListItem = ({tuit}) => {
     };
     return(
         <li className="wd-border-solid wd-border-thin wd-border-color  list-group-item">
-                            <span className="align-text-top wd-font wd-fg-color-black">{tuit.topic}
+                            <span className="align-text-top wd-font wd-fg-color-black">
+                                {tuit.topic}
                             <img
                                 className="wd-rounded-corners-all-around-25 wd-border-right wd-margin-right-16 "
                                 alt={"A javascript Logo"}

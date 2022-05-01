@@ -36,7 +36,7 @@ const ExploreComponent = () => {
                 </ul>
                 </div>
                 <div className="card bg-dark text-white">
-                    <img src="/tuiter/starship.jpg" className="card-img" alt="...">
+                    <img src="/tuiter/starship.jpg" className="card-img" alt="prop">
                         <div className="card-img-overlay">
                             <h5 className="card-title">Card title</h5>
                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
