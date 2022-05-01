@@ -13,6 +13,7 @@ const WhoToFollowListItem = (
                 className={"wd-rounded-corners-all-around-25"}
                 width={50}
                 height={50}
+                alt={"..."}
                 src={who.avatarIcon}/>
             {who.userName}
             (@{who.handle})
