@@ -3,7 +3,7 @@ import PostSummaryItem from "./PostSummaryItem";
 
 const PostSummaryList = () => {
     return(
-        <ul>
+        <ul className={"list-group"}>
             {                                           // don't need $
                 post.map(post => {
                     return(<PostSummaryItem post={post}/>);    // use tag syntax instead attribute as parameter

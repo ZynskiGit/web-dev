@@ -4,10 +4,12 @@ import {useSelector} from "react-redux";
 const WhoToFollowList = () => {
     const who = useSelector((state) => state.who);
     return(
-        <ul>
+        <ul className={"list-group"}>
             {                                           // don't need $
-                who.map(who => {
-                    return(<WhoToFollowListItem who={who}/>);    // use tag syntax instead attribute as parameter
+                who.map((who, index) => {
+                    return(
+                        <WhoToFollowListItem who={who} key={index}/>
+                        );    // use tag syntax instead attribute as parameter
                 })                                      // don't need join()
             }
         </ul>

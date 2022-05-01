@@ -1,16 +1,24 @@
 const WhoToFollowListItem = (
     {
         who = {
-            avatarIcon: '../../../images/nasa.png',
+            avatarIcon: '/tuiter/nasa.png',
             userName: 'NASA',
             handle: 'NASA',
         }
     }) => {
     return(                                 // we don't need ''
-        <li>
-            <img src={who.avatarIcon} alt={""}/>
+        <li className={"list-group-item"}>
+            <span className={"flex"}>
+            <img
+                className={"wd-rounded-corners-all-around-25"}
+                width={50}
+                height={50}
+                src={who.avatarIcon}/>
             {who.userName}
-            ({who.handle})
+            (@{who.handle})
+                <button type="submit" className="btn btn-primary wd-border-right rounded-pill">Follow
+                    </button>
+            </span>
         </li>
     );
 }

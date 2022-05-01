@@ -10,28 +10,28 @@ const NavigationSidebar = (
                 <a className="list-group-item" id="1" href="/">
                     <i className="fab fa-twitter"></i></a>
                 <a className={`list-group-item
-        ${active === 'home' ? 'active' : ''}`} href="/">
+        ${active === 'home' ? 'active' : ''}`} href="/home">
                     <i className="fa fa-home"></i> Home</a>
                 <a className={`list-group-item
-        ${active === 'explore' ? 'active' : ''}`} href="/">
+        ${active === 'explore' ? 'active' : ''}`} href="/explore">
                     <i className="fa fa-hashtag"></i> Explore</a>
                 <a className={`list-group-item
-        ${active === 'notifications' ? 'active' : ''}`} href="/">
+        ${active === 'notifications' ? 'active' : ''}`} href="/notifications">
                     <i className="fa fa-bell"></i> Notifications</a>
                 <a className={`list-group-item
-        ${active === 'messages' ? 'active' : ''}`} href="/">
+        ${active === 'messages' ? 'active' : ''}`} href="/Messages">
                     <i className="fa fa-envelope"></i> Messages</a>
                 <a className={`list-group-item
-        ${active === 'bookmarks' ? 'active' : ''}`} href="/">
+        ${active === 'bookmarks' ? 'active' : ''}`} href="/Bookmarks">
                     <i className="fa fa-bookmark"></i> Bookmarks</a>
                 <a className={`list-group-item
-        ${active === 'lists' ? 'active' : ''}`} href="/">
+        ${active === 'lists' ? 'active' : ''}`} href="/lists">
                     <i className="fa fa-list"></i> Lists</a>
                 <a className={`list-group-item
-        ${active === 'profile' ? 'active' : ''}`} href="/">
+        ${active === 'profile' ? 'active' : ''}`} href="/profile">
                     <i className="fa fa-user"></i> Profile</a>
                 <a className={`list-group-item
-        ${active === 'more' ? 'active' : ''}`} href="/">
+        ${active === 'more' ? 'active' : ''}`} href="/More">
                     <i className="fa fa-dot-circle"></i> More</a>
 
             </div>

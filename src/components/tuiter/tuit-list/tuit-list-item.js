@@ -5,13 +5,13 @@ const TuitListItem = ({tuit}) => {
     const deleteTuit = (tuit) => {
         dispatch({type: 'delete-tuit', tuit})
     };
-    return(                                 // we don't need ''
+    return(
         <li className="wd-border-solid wd-border-thin wd-border-color  list-group-item">
                             <span className="align-text-top wd-font wd-fg-color-black">{tuit.topic}
                             <img
                                 className="wd-rounded-corners-all-around-25 wd-border-right wd-margin-right-16 "
                                 alt={"A javascript Logo"}
-                                src="javascript.png"
+                                src="/tuiter/javascript.png"
                                 width="100"
                                 height="100"></img></span>
             <h1 class="wd-font wd-fg-color-black ">{tuit.title} <i
