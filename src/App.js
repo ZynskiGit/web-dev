@@ -1,69 +1,42 @@
-import logo from './logo.svg';
-
-// import './vendors/bootstrap/css/bootstrap.min.css';
-// import './vendors/bootstrap/bootstrap.min.css';
-// import './vendors/fontawesome/css/all.min.css';
-
-import './App.css';
+import './vendors/bootstrap-5.1.3-dist/css/bootstrap.min.css';
+import './vendors/bootstrap-5.1.3-dist/bootstrap.min.css';
+import './vendors/fontawesome-free-5.15.4-web/css/all.min.css';
+import HelloWorld from "./components/hello-world"; // no .js extension needed
 import Labs from "./components/labs";
-import Tuiter from "./components/tuiter";
+import Tuiter from "./components/tuiter/index.js";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import ExploreScreen from "./components/tuiter/explore screen/ExploreScreen.js";
+import HomeScreen from "./components/tuiter/home-screen"; // import Route
 
-import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
-import HelloWorld from "./components/hello-world";
-import HomeScreen from "./components/tuiter/home-screen";
-import ExploreScreen from "./components/tuiter/explore-screen";
-import NotificationScreen from "./components/tuiter/notification-screen";
-import UserList from "./components/user-list";
-import SearchOmdb from "./screens/search-omdb";
-import DetailsOmdb from "./screens/details-omdb";
-import Nav from "./screens/nav";
-import Signup from "./screens/signup";
-import Profile from "./screens/profile";
-import Signin from "./screens/signin";
-import Pre from "./utils/pre";
-import {ProfileProvider} from "./contexts/profile-context";
-import SecureRoute from "./components/secure-route";
-import SearchSneaks from "./screens/search-sneaks";
+// excess Route:
+// <Route path="notifications"
+//                                   element={<NotificationScreen/>}/>
 
 function App() {
     return (
-        <ProfileProvider>
-            <BrowserRouter>
-                <div className="container">
-                    <Routes>
-                        <Route path="/">
-                            <Route path="/profile" element={
-                                <SecureRoute>
-                                    <Profile/>
-                                </SecureRoute>
-                            }/>
-                            <Route path="/signin" element={<Signin/>}/>
-                            <Route path="/signup" element={<Signup/>}/>
-                            <Route path="/sneaks" element={<SearchSneaks/>}/>
-                            <Route path="/omdb" element={<SearchOmdb/>}/>
-                            <Route path="omdb/:searchString" element={<SearchOmdb/>}/>
-                            <Route path="omdb/details/:imdbID" element={<DetailsOmdb/>}/>
-                            <Route path="users"
-                                   element={<UserList/>}/>
-                            <Route path="labs"
-                                   element={<Labs/>}/>
-                            <Route path="hello"
-                                   element={<HelloWorld/>}/>
-                            <Route path="tuiter"
-                                   element={<Tuiter/>}>
-                                <Route index path="home"
-                                       element={<HomeScreen/>}/>
-                                <Route path="explore"
-                                       element={<ExploreScreen/>}/>
-                                <Route path="notifications"
-                                       element={<NotificationScreen/>}/>
-                            </Route>
+        <BrowserRouter>
+            <div className="container">
+                <Routes>
+                    <Route path="/">
+
+                        <Route path="labs"
+                               element={<Labs/>}/>
+                        <Route path="hello"
+                               element={<HelloWorld/>}/>
+                        <Route path="tuiter"
+                               element={<Tuiter/>}>
+                            <Route index
+                                   element={<HomeScreen/>}/>
+                            <Route path="explore"
+                                   element={<ExploreScreen/>}/>
                         </Route>
-                    </Routes>
-                </div>
-            </BrowserRouter>
-        </ProfileProvider>
+                    </Route>
+                </Routes>
+            </div>
+        </BrowserRouter>
     );
 }
 
+
 export default App;
+

@@ -1,5 +1,6 @@
 import TuitList from "../tuit-list";
 import WhatsHappening from "./whats-happening";
+
 const HomeScreen = () => {
     return(
         <div>
@@ -9,3 +10,4 @@ const HomeScreen = () => {
     )
 }
 export default HomeScreen;
+

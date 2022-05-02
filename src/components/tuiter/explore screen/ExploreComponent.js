@@ -1,4 +1,4 @@
-import PostSummaryList from "../post-summary-list";
+import PostSummaryList from "../PostSummaryList";
 
 const ExploreComponent = () => {
     return (
