@@ -23,6 +23,7 @@ import Signin from "./screens/signin";
 import Pre from "./utils/pre";
 import {ProfileProvider} from "./contexts/profile-context";
 import SecureRoute from "./components/secure-route";
+import SearchSneaks from "./screens/search-sneaks";
 
 function App() {
     return (
@@ -38,6 +39,7 @@ function App() {
                             }/>
                             <Route path="/signin" element={<Signin/>}/>
                             <Route path="/signup" element={<Signup/>}/>
+                            <Route path="/sneaks" element={<SearchSneaks/>}/>
                             <Route path="/omdb" element={<SearchOmdb/>}/>
                             <Route path="omdb/:searchString" element={<SearchOmdb/>}/>
                             <Route path="omdb/details/:imdbID" element={<DetailsOmdb/>}/>
