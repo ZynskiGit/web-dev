@@ -1,5 +1,5 @@
 import React from "react";
-import NavigationSidebar from "../NavigationSidebar";
+import NavigationSidebar from "../navigation";
 import ExploreComponent from "./ExploreComponent";
 import WhoToFollowList from "../WhoToFollowList";
 const ExploreScreen = () => {
@@ -19,4 +19,3 @@ const ExploreScreen = () => {
     );
 };
 export default ExploreScreen;
-

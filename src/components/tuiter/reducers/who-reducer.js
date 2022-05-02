@@ -5,4 +5,3 @@ const whoReducer = (state = whoJson) => {
 };
 
 export default whoReducer;
-

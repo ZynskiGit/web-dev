@@ -1,4 +1,4 @@
-import PostSummaryList from "../PostSummaryList";
+import PostSummaryList from "../post-summary-list";
 
 const ExploreComponent = () => {
     return (
@@ -12,28 +12,28 @@ const ExploreComponent = () => {
                     style={{width: '90%'}}
                 />
                 <div>
-                <ul className="nav mb-2 nav-tabs">
-                    <div>
+                    <ul className="nav mb-2 nav-tabs">
+                        <div>
 
-                        <ul className="nav nav-tabs">
-                            <li className="nav-item">
-                                <a className="nav-link active" href="for-you.html">For You</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="trending.html">Trending</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="news.html">News</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="sports.html">Sports</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="entertainment.html">Entertainment</a>
-                            </li>
-                        </ul>
-                    </div>
-                </ul>
+                            <ul className="nav nav-tabs">
+                                <li className="nav-item">
+                                    <a className="nav-link active" href="for-you.html">For You</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="trending.html">Trending</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="news.html">News</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="sports.html">Sports</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="entertainment.html">Entertainment</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
                 </div>
                 <div className="card bg-dark text-white">
                     <img src="/tuiter/starship.jpg" className="card-img" alt="prop">
@@ -52,4 +52,3 @@ const ExploreComponent = () => {
         </div>);
 }
 export default ExploreComponent;
-
