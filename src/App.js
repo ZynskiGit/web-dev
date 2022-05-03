@@ -23,6 +23,9 @@ import Signin from "./screens/signin";
 import Pre from "./utils/pre";
 import {ProfileProvider} from "./contexts/profile-context";
 import SecureRoute from "./components/secure-route";
+import SearchSneaks from "./screens/search-art";
+import SearchArt from "./screens/search-art";
+import DetailsArt from "./screens/details-art";
 
 function App() {
     return (
@@ -39,8 +42,10 @@ function App() {
                             <Route path="/signin" element={<Signin/>}/>
                             <Route path="/signup" element={<Signup/>}/>
                             <Route path="/omdb" element={<SearchOmdb/>}/>
+                            <Route path="/art" element={<SearchArt/>}/>
                             <Route path="omdb/:searchString" element={<SearchOmdb/>}/>
                             <Route path="omdb/details/:imdbID" element={<DetailsOmdb/>}/>
+                            <Route path="art/details/:artID" element={<DetailsArt/>}/>
                             <Route path="users"
                                    element={<UserList/>}/>
                             <Route path="labs"
