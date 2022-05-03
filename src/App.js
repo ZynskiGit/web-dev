@@ -44,6 +44,7 @@ function App() {
                             <Route path="/omdb" element={<SearchOmdb/>}/>
                             <Route path="/art" element={<SearchArt/>}/>
                             <Route path="omdb/:searchString" element={<SearchOmdb/>}/>
+                            <Route path="art/:searchString" element={<SearchArt/>}/>
                             <Route path="omdb/details/:imdbID" element={<DetailsOmdb/>}/>
                             <Route path="art/details/:artID" element={<DetailsArt/>}/>
                             <Route path="users"
