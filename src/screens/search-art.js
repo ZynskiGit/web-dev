@@ -10,7 +10,7 @@ const SearchArt = () => {
     const lcoation = useLocation();
     const titleRef = useRef();
     <li>
-        <Pre obj={searchString} />
+        <Pre obj={searchString}/>
     </li>
     const ART_URL = 'https://api.harvardartmuseums.org/object?apikey=682a9ad5-4db7-4dd6-ae10-2fbbdf8d04f1&q='
     //const API_KEY = '682a9ad5-4db7-4dd6-ae10-2fbbdf8d04f1';
@@ -20,7 +20,7 @@ const SearchArt = () => {
         setExhibitions(response.data.records)
         navigate(`/art/${titleRef.current.value}`)
     }
-    useEffect( () => {
+    useEffect(() => {
         if (searchString) {
             titleRef.current.value = searchString;
             searchObjectsByTitle()
@@ -40,12 +40,11 @@ const SearchArt = () => {
                 </li>
                 {
                     exhibitions.map(exhibit =>
-                    <li className="list-group-item" key={exhibit.objectnumber}>
-                        <Link to={`/art/details/${exhibit.objectnumber}`}>
-                        <img src={exhibit.primaryimageurl} height={50} className="me-2"/>
-
-                {exhibit.title}
-                        </Link></li>)
+                        <li className="list-group-item" key={exhibit.objectnumber}>
+                            <Link to={`/art/details/${exhibit.objectnumber}`}>
+                                <img src={exhibit.primaryimageurl} height={50} className="me-2"/>
+                                {exhibit.title}
+                            </Link></li>)
                 }
             </ul>
             <Pre obj={exhibitions}/>

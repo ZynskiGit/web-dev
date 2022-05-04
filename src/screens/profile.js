@@ -40,8 +40,8 @@ const Profile = () => {
                 Logout
             </button>
             {profile && profile.email}
-            <Link to="/omdb">
-                Search movies
+            <Link to="/art">
+                Search Art
             </Link>
 
             {JSON.stringify(comments)}
@@ -50,9 +50,9 @@ const Profile = () => {
                 {
                     comments && comments.map(comment =>
                         <li className="list-group-item">
-                            <Link to={`/omdb/details/${comment.imdbID}`}>
+                            <Link to={`/art/details/${comment.objectnumber}`}>
                                 {comment && comment.comment}
-                                {comment.imdbID}
+                                {comment.objectnumber}
                             </Link>
                         </li>
                     )
