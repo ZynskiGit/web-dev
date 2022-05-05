@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import {Link, useNavigate} from "react-router-dom";
 import {useProfile} from "../contexts/profile-context";
-import {findCommentsByUserId} from "../services/movie-service";
+import {findCommentsByUserId} from "../services/art-service";
 
 const api = axios.create({
     withCredentials: true

@@ -24,7 +24,7 @@ const DetailsArt = () => {
     }
     const fetchArtByObjectNumberFromOurApi = async () => {
         // TODO: this is a NONO ... this should be in a movies-service.js
-        const response = await axios(`http://localhost:4000/api/art/${objectnumber}`)
+        const response = await axios(`http://localhost:4000/api/objects/${objectnumber}`)
         setOurArtDetails(response.data)
     }
 
@@ -45,6 +45,17 @@ const DetailsArt = () => {
             objectnumber: artDetails.objectnumber
         }
         const response = await axios.post("http://localhost:4000/api/likes", art)
+        setOurArtDetails(response.data)
+    }
+
+    const handleDisLikes = async () => {
+        console.log(artDetails)
+        const art = {
+            title: artDetails.title,
+            primaryimageurl: artDetails.primaryimageurl,
+            objectnumber: artDetails.objectnumber
+        }
+        const response = await axios.post("http://localhost:4000/api/dislikes", art)
         setOurArtDetails(response.data)
     }
 
@@ -78,6 +89,9 @@ const DetailsArt = () => {
         {artDetails.culture}
         <h5>Department</h5>
         {artDetails.department}
+        <p>
+
+        </p>
 
         <SecureContent>
             Welcome: {profile && profile.email}
@@ -87,7 +101,7 @@ const DetailsArt = () => {
                 <button onClick={handleLikes}>
                     Like ({ourArtDetails && ourArtDetails.likes}) !!!!!
                 </button>
-                <button>Dislike</button>
+                <button onClick={handleDisLikes}>Dislike ({ourArtDetails && ourArtDetails.dislikes})</button>
                 <h2>Leave a comment</h2>
                 <textarea ref={commentRef} className="form-control" placeholder="What do you think about this piece?"></textarea>
                 <button onClick={handleComment}
@@ -99,8 +113,8 @@ const DetailsArt = () => {
 
         <ul className="list-group">
             {
-                comments.map(comment =>
-                    <li className="list-group-item">
+                comments.map((comment, index) =>
+                    <li className="list-group-item" key={index}>
                         {comment && comment.commenterEmail}
                         <hr/>
                         {comment && comment.comment}
