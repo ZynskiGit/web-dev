@@ -15,6 +15,7 @@ import {ProfileProvider} from "./contexts/profile-context";
 import SecureRoute from "./components/secure-route";
 import SearchArt from "./screens/search-art";
 import DetailsArt from "./screens/details-art";
+import HomeScreen from "./screens/home-screen";
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
                                     <Profile/>
                                 </SecureRoute>
                             }/>
+                            <Route path="/home" element={<HomeScreen/>}/>
                             <Route path="/signin" element={<Signin/>}/>
                             <Route path="/signup" element={<Signup/>}/>
 
